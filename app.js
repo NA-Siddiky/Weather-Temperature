@@ -14,8 +14,7 @@ const getWeatherData = () => {
 }
 
 const showWeather = (weatherInfo) => {
-    console.log(data);
-
+    // console.log(data);
     const displayWeather = document.getElementById("display-weather");
 
     const unixTimestamp = weatherInfo.timezone
@@ -23,14 +22,9 @@ const showWeather = (weatherInfo) => {
     // const dateObject = new Date(milliseconds)
     // const humanDateFormat = dateObject.toLocaleString() //2019-12-9 10:30:15
     // console.log(humanDateFormat);
-
-
-
     var s = new Date(unixTimestamp).toLocaleDateString("en-US")
     // expected output "8/30/2017"  
-    console.log(s);
-
-
+    // console.log(s);
 
     const getWeatherInfo = `
             <div>
